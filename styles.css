@@ -1,8 +1,55 @@
-/*
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 8px;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.thumbnail-grid fieldset {
+  display: flex;                /* Make it a flex container */
+  flex-direction: column;       /* Stack button + labels vertically */    /* Center horizontally */
+  justify-items: center;      /* Optional: center vertically if needed */
+  height: 220px;
+  padding: 6px;
+  border: 1px solid var(--interactive-accent);
+  overflow: hidden;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+}
 
-If your plugin does not need CSS, delete this file.
+.thumbnail-entry {
+    justify-self: start;
+    border: 1px solid var(--divider-color);
+}
 
-*/
+.thumbnail-button {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    /* Ensure it's treated as a block element */
+}
+
+.thumbnail-button:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail-labels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+}
+.thumbnail-label {
+  white-space: nowrap;
+  display: flex-start;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: var(--font-ui-medium);
+  font-weight: bold;
+  background-color: var(--background-secondary-alt);
+}
