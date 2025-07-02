@@ -6,9 +6,9 @@
 }
 
 .thumbnail-grid fieldset {
-  display: flex;                /* Make it a flex container */
-  flex-direction: column;       /* Stack button + labels vertically */    /* Center horizontally */
-  justify-items: center;      /* Optional: center vertically if needed */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   height: 220px;
   padding: 6px;
   border: 1px solid var(--interactive-accent);
@@ -28,7 +28,6 @@
     background-size: cover;
     border: none;
     cursor: pointer;
-    /* Ensure it's treated as a block element */
 }
 
 .thumbnail-button:hover {
